@@ -9,26 +9,25 @@ class Myprofile extends Component {
         <div className="myprofile">My Profile</div>
         <div className="info">
           <div>
-            <div>E-MAIL</div>
-            <span>나의 이메일: </span>
+            <div className="headfont">E-MAIL</div>
+            <div className="tailfont">velvetredvelvet91@gmail.com</div>
           </div>
         </div>
         <div className="info">
           <div>
-            <div>USERNAME</div>
-            <span>나의 이름: </span>
+            <div className="headfont">USERNAME</div>
+            <div className="tailfont">김혜영</div>
           </div>
         </div>
         <div className="info">
           <div>
-            <div>MOBILE</div>
-            <span>나의 연락처: </span>
+            <div className="headfont">MOBILE</div>
+            <div className="tailfont">010-1234-5678</div>
           </div>
         </div>
         <div className="myprofileBtnContainer">
           <button className="myprofileBtn">UPDATE PROFILE</button>
         </div>
-        <hr color="black"></hr>
         <div className="deleteContainer">
           <div className="deleteaccount">delete your account</div>
           <span className="deletemsg">Once your delete yoru account, there is no going back. Please be certain.</span>
