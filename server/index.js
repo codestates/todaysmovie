@@ -18,10 +18,10 @@ app.use(
   })
 );
 app.use(cookieParser());
-app.get("/auth", controllers.auth);
+app.get("/myprofile", controllers.myprofile);
 app.post("/signup", controllers.signup);
-app.post("/signin", controllers.signin);
-app.post("/signout", controllers.signout);
+app.post("/login", controllers.login);
+app.post("/logout", controllers.logout);
 
 const HTTPS_PORT = process.env.HTTPS_PORT || 4000;
 
