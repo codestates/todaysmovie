@@ -6,30 +6,48 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    /* height: 100%;
     width: 100%;
     padding: 20px;
     border-radius: 10px;
     opacity: 0.8;
     font-weight: 850;
+    font-size: 30px; */
+  }
+
+  .headfont {
     font-size: 30px;
+    font-weight: 850;
+    margin-bottom: 25px;
+  }
+
+  .tailfont {
+    font-size: 25px;
+    font-weight: 350;
+    text-align: center;
+    border: 3px solid #eee;
+    background-color: #eee;
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
   }
 
   .myprofile {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: 35px;
+    font-weight: 850;
   }
 
   .info {
     border: none;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    /* border-bottom: 2px solid rgb(0, 0, 0); */
     color: rgb(0, 0, 0);
     text-align: center;
     outline: none;
     font-size: 1.5rem;
-    margin-top: 35px;
-    margin-bottom: 15px;
+    margin-top: 65px;
+    margin-bottom: 45px;
     width: 350px;
     height: 50px;
   }
@@ -40,14 +58,14 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 20px;
     width: 100%;
     }
   
     .myprofileBtn {
       border: 3px solid #eee;
-      width: 25%;
+      width: 15%;
       height: 45px;
       border-radius: 10px;
       cursor: pointer;
@@ -58,8 +76,33 @@
 
     .deleteaccount {
       color: red;
+      font-weight: 450;
+      font-size: 1.8rem;
+      margin-bottom: 35px;
     }
 
     .deletemsg {
       font-style: italic;
+    }
+
+    .deleteBtn {
+      border: 3px solid #eee;
+      width: 100%;
+      height: 35px;
+      border-radius: 10px;
+      cursor: pointer;
+      outline: none;
+      font-weight: 750;
+      font-size: 1rem;
+    }
+
+    .deleteBtnContainer {
+      font-weight: 550;
+      font-size: 30px;
+      margin-bottom: 45px;
+    }
+
+    .deleteContainer {
+      margin-top: 55px;
+      margin-bottom: 45px;
     }
