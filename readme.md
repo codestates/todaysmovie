@@ -15,7 +15,7 @@
 
 # 우리는 이런 기술을 사용했어요.
 
-* Frontend
+* Frontend<p>
 ![140px-Unofficial_JavaScript_logo_2 svg](https://user-images.githubusercontent.com/85774603/146703183-22735cf9-5c9c-4012-9b61-79fd27a5ce72.png)
 ![200px-React-icon svg](https://user-images.githubusercontent.com/85774603/146703185-9161b87c-4dcf-4fdb-8efb-0f59d5de8e5f.png)
 ![react_hooks](https://user-images.githubusercontent.com/85774603/146703188-6ccf6c44-7588-4720-b6ae-a7c487b3c058.png)
