@@ -1,6 +1,6 @@
 const { user } = require('../../models');
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
   if (!req.session.userId) {
     res.status(404).send({ message: 'invalid user' });
   } else {
