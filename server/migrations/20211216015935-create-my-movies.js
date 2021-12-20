@@ -20,7 +20,7 @@ module.exports = {
       movieGenre: {
         type: Sequelize.INTEGER,
       },
-      movieStars: {
+      movieRating: {
         type: Sequelize.INTEGER,
       },
       movieRunningtime: {

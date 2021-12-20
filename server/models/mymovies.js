@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       movieName: DataTypes.STRING,
       moviePoster: DataTypes.STRING,
       movieGenre: DataTypes.INTEGER,
-      movieStars: DataTypes.INTEGER,
+      movieRating: DataTypes.INTEGER,
       movieRunningtime: DataTypes.INTEGER,
       movieDesc: DataTypes.STRING,
     },
