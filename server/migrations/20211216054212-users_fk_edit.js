@@ -26,3 +26,6 @@ module.exports = {
     // await queryInterface.removeColumn("comments", "userId");
   },
 };
+
+// npx sequelize-cli db:migrate
+// npx sequelize-cli db:migrate:undo:all
