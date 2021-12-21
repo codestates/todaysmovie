@@ -20,9 +20,6 @@ module.exports = {
       mobile: {
         type: Sequelize.INTEGER,
       },
-      myMoviesId: {
-        type: Sequelize.INTEGER,
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
