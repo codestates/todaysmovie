@@ -7,13 +7,15 @@ const {movieName, moviePoster, movieRating, movieRunningtime, movieDesc, movieGe
 
   return (
     <div className="card">
-      <div className="card-item" style={{ flex: 3 }}>
+      <div className="card-item">
       <img src={moviePoster} />
       </div>
-      <div style={{ flex: 7 }}>
+      <div >
         <h3 className="movieName">{movieName}</h3>
+        <span className="infoColumn">
         <p className="movieRating">Rating: {movieRating}</p>
         <p className="movieRunningtime">Running time: {movieRunningtime}</p>
+        </span>
         <p className="movieDesc">{movieDesc}</p>
         <p>genres</p>
         <div className="tag-list">
@@ -22,7 +24,6 @@ const {movieName, moviePoster, movieRating, movieRunningtime, movieDesc, movieGe
         })}</div>
       </div>
     </div>
-
 
 
   )
