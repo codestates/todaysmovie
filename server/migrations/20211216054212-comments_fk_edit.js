@@ -30,5 +30,8 @@ module.exports = {
   },
 };
 
+// 마이그레이션 실행하는 명령어
 // npx sequelize-cli db:migrate
+
+// 마이그레이션 취소하는 명령어
 // npx sequelize-cli db:migrate:undo:all
