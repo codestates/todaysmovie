@@ -1,0 +1,53 @@
+import React, { useState } from "react";
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import "./Login.css";
+
+axios.defaults.withCredentials = true;
+
+export default function Login ({handleResponseSuccess}) {
+  
+  // const [loginInfo, setLoginInfo] = useState({
+  //   email: '',
+  //   password: '',
+  // });
+  // const handleInputValue = (key) => (e) => {
+  //   setLoginInfo({ ...loginInfo, [key]: e.target.value });
+  // };
+  // const handleLogin = () => {
+  //   if (loginInfo.email && loginInfo.password) {
+  //     axios.post('https://localhost:4000/login', {
+  //       email: loginInfo.email,
+  //       password: loginInfo.password
+  //     })
+  //     .then(handleResponseSuccess)
+  //   } else {
+
+  //   }
+    
+  // } 
+
+  const navigate = useNavigate();
+
+  function handleClicktoMainpage() {
+    navigate("/mainpage");
+  }
+
+  function handleClicktoSignuppage() {
+    navigate("/signup");
+  }
+  
+  return (
+    <form>
+      <h3>LOGIN</h3>
+      <label className="username">USERNAME</label>
+      <input type="text" placeholder="Email" id="username" />
+      <label className="password">PASSWORD</label>
+      <input type="password" placeholder="Password" id="password" />
+      <button onClick={handleClicktoMainpage}>LOGIN</button>
+      <button onClick={handleClicktoSignuppage}>SIGN UP</button>
+    </form>
+  )
+}
+
+

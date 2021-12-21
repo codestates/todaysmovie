@@ -1,12 +1,26 @@
-img {
-  width: 350px;
-  height: 200px;
+.header {
+  background-color: skyblue;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  font-size: 55px;
+  font-weight: 900;
+  /* box-shadow: 0 0 5px 0 #555; */
 }
 
 .logo {
-    text-align: center;
-    background-color: #B0E0E6;
-    margin-top: 25px;
-    margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logoImage {
+  width: 200px;
+  height: 125px;
+  margin: 15px;
+  margin-right: 35px;
 }
 
