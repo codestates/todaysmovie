@@ -1,12 +1,13 @@
-import logo from './todaysmovie_logo.png';
+import logo from './logo.png';
 import './Header.css';
 
-const Header = () => {
-    return (
-            <div className="logo">
-                <img src={logo} className="logo" alt="logo" />
-            </div>
-    )
+export default function Header () {
+  return (
+    <div className="header">
+    <div className="logo">
+      <img src={logo} className="logoImage" alt="logo" />
+      TODAY'S MOVIE
+    </div>
+    </div>
+  )
 }
-
-export default Header
