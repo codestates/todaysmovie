@@ -11,6 +11,6 @@ export default function ProfileBtn () {
   }
 
   return (
-<button class="noselect" onClick={handleClicktoMyprofile}>MY PROFILE</button>
+<button className="noselect" onClick={handleClicktoMyprofile}>MY PROFILE</button>
   )
 }

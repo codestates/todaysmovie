@@ -10,25 +10,50 @@ body {
     margin-top: 50px;
     padding: 15px;
     width: 400px;
-    height: 550px;
-    display: inline-block;
+    height: 544px;
+    /* display: inline-block; */
     border-radius: 15px;
-    border: 1px solid white;
+    border: 1px solid lightgray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all 0.5s;
     transition-delay: 0.4s;
     position: relative;
     overflow: hidden;
-  
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 3px 10px 0 #aaa;
+    cursor: pointer;
   }
   
   .card:hover {
-    width: 360px;
-    height: 600px;
+    width: 400px;
+    height: 800px;
   }
   
   img {
+    display: block;
+    margin: 0px auto;
     width: 250px;
     height: 350px;
-  
+    object-fit: cover;
+    
   }
+
+  .movieName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+.infoColumn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.movieDesc {
+  text-align: justify;
+}

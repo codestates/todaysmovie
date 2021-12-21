@@ -20,7 +20,7 @@ export default function Myprofile () {
       <span className="myprofileinfo" id="username">김혜영</span>
       <label className="mobile">MOBILE</label>
       <span className="myprofileinfo" id="mobile">010-1234-5678</span>
-      <button onClick={handleClicktoMainpage}>CONFIRM MY PROFILE</button>
+      <button onClick={handleClicktoMainpage}>LOGOUT</button>
     </form>
   )
 }

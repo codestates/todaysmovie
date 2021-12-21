@@ -1,0 +1,9 @@
+span {
+    background-color: #ace7ff;
+    padding: 0px 25px;
+}
+
+.singleMovieConainer {
+    display: inline-block;
+    text-align: justify;
+}

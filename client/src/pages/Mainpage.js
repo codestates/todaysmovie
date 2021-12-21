@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Login.css";
+import "./Mainpage.css";
 
 import mockMovie from "../static/mockMovie";
 
@@ -31,6 +31,9 @@ export default function Mainpage () {
     <div>
       <RandomBtn />
     </div>
+
+
+
     </>
   )
 }
