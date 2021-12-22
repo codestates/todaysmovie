@@ -10,14 +10,17 @@ module.exports = async (req, res) => {
   } else {
     // console.log("req.session1:  ", req.session);
 
-    req.session.save(function (err) {
-      // session saved
-      if (err) {
-        console.log(err);
-      }
-      req.session.email = userInfo.email;
-      // console.log("req.session2:  ", req.session);
-      res.status(200).send({ data: userInfo, message: "Login success" });
-    });
+    // req.session.save(function (err) {
+    //   if (err) {
+    //     console.log(err);
+    //   }
+    //   req.session.email = userInfo.email;
+    //   console.log("req.session2:  ", req.session);
+    //   res.status(200).send({ data: userInfo, message: "Login success" });
+    // });
+
+    req.session.email = userInfo.email;
+    console.log("req.session2:  ", req.session);
+    res.status(200).send({ data: userInfo, message: "Login success" });
   }
 };

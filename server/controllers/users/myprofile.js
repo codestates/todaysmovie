@@ -1,7 +1,7 @@
 const { user } = require("../../models");
 
 module.exports = async (req, res) => {
-  // console.log(req.session);
+  console.log(req.session);
   if (!req.session.email) {
     res.status(404).send({ message: "invalid user" });
   } else {

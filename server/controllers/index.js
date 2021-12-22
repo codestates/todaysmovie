@@ -1,6 +1,6 @@
 module.exports = {
-  myprofile: require('./users/myprofile'),
-  signup: require('./users/signup'),
-  login: require('./users/login'),
-  logout: require('./users/logout'),
+  signup: require("./users/signup"),
+  login: require("./users/login"),
+  myprofile: require("./users/myprofile"),
+  logout: require("./users/logout"),
 };
