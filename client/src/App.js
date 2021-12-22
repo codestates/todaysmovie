@@ -12,31 +12,24 @@ import axios from "axios";
 
 
 export default function App () {
-  // const [hasMovie, setHasMovie] = useState(false);
-  /*
+  
   const [isLogin, setIsLogin] = useState(false);
-  const [userInfo, setUserInfo] = useState(null);
-  const navigate = useNavigate();
-  const isAuthenticated = () => {
-    axios.get('https://localhost:4000/myprofile')
-    .then(res => {
-      if (res.data.data.userInfo) {
-        const {email, mobile, username} = res.data.data.userInfo;
-        setUserInfo( {
-          email,
-          mobile,
-          username,
-        });
-        setIsLogin(true);
-        navigate('/myprofile')
-      } else {
-        setUserInfo(null)
-      }
-    })
-  }
-  const handleResponseSuccess = () => {
+
+  //const navigate = useNavigate();
+  const isAuthenticated = () => {}
+  
+
+
+  useEffect(()=> {
     isAuthenticated();
-  }
+  },[]);
+  /*
+  
+  const [userInfo, setUserInfo] = useState(null);
+  
+  
+  
+
   const handleLogout = () => {
     axios.post('https://localhost:4000/logout').then(res => {
       setUserInfo(null);
@@ -45,9 +38,7 @@ export default function App () {
     });
   }
 
-  useEffect(()=> {
-    isAuthenticated();
-  },[]);
+
   */
     return (
       <BrowserRouter>
@@ -76,7 +67,7 @@ export default function App () {
 
             
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Login isLogin={isLogin} />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/myprofile" element={<Myprofile />} />
             <Route path="/mainpage" element={<Mainpage />} />

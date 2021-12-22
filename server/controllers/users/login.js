@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
   if (!userInfo) {
     res.status(401).send({ message: "not authorized" });
   } else {
-    // console.log("req.session1:  ", req.session);
+    console.log("req.session1:  ", req.session);
 
     req.session.save(function (err) {
       // session saved
@@ -16,7 +16,7 @@ module.exports = async (req, res) => {
         console.log(err);
       }
       req.session.email = userInfo.email;
-      // console.log("req.session2:  ", req.session);
+      console.log("req.session2:  ", req.session);
       res.status(200).send({ data: userInfo, message: "Login success" });
     });
   }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "./Signup.css";
 
@@ -29,6 +29,8 @@ export default function Signup () {
       })
       navigate("/");
     
+    } else {
+      alert('다시 입력해 주세요')
     }
     
   }
