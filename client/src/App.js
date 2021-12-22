@@ -13,31 +13,30 @@ import axios from "axios";
 
 
 export default function App () {
-  // const [hasMovie, setHasMovie] = useState(false);
-  /*
+  
   const [isLogin, setIsLogin] = useState(false);
   const [userInfo, setUserInfo] = useState(null);
-  const navigate = useNavigate();
+
   const isAuthenticated = () => {
-    axios.get('https://localhost:4000/myprofile')
-    .then(res => {
-      if (res.data.data.userInfo) {
-        const {email, mobile, username} = res.data.data.userInfo;
-        setUserInfo( {
-          email,
-          mobile,
-          username,
-        });
-        setIsLogin(true);
-        navigate('/myprofile')
-      } else {
-        setUserInfo(null)
-      }
-    })
-  }
+    // TODO: 이제 인증은 성공했습니다. 사용자 정보를 호출하고, 이에 성공하면 로그인 상태를 바꿉시다.
+    
+  };
+  
   const handleResponseSuccess = () => {
     isAuthenticated();
-  }
+  };
+
+
+  useEffect(()=> {
+    isAuthenticated();
+  },[]);
+  /*
+  
+  
+  
+  
+  
+
   const handleLogout = () => {
     axios.post('https://localhost:4000/logout').then(res => {
       setUserInfo(null);
@@ -46,9 +45,7 @@ export default function App () {
     });
   }
 
-  useEffect(()=> {
-    isAuthenticated();
-  },[]);
+
   */
  
     return (
@@ -77,7 +74,7 @@ export default function App () {
 
             
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Login isLogin={isLogin} handleResponseSuccess={handleResponseSuccess}/>} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/myprofile" element={<Myprofile />} />
             <Route path="/mainpage" element={<Mainpage />} />

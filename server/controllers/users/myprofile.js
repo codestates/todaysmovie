@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
       })
       .catch((err) => res.json(err));
 
-    // console.log(result);
+    console.log(result);
     res.status(200).json({ data: result, message: "ok" });
   }
 };
