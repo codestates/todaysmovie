@@ -7,7 +7,6 @@ const cookieParser = require("cookie-parser");
 const express = require("express");
 const session = require("express-session");
 const app = express();
-
 const controllers = require("./controllers");
 
 app.use(
@@ -21,11 +20,11 @@ app.use(
       maxAge: 24 * 6 * 60 * 10000,
       sameSite: "none",
       httpOnly: true,
-      secure: true,
+      secure: false, //true 일때는 https 환경에서만 session 정보를 주고받도록처리
     },
   })
 );
-app.use(logger('dev'));
+app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(
@@ -36,9 +35,9 @@ app.use(
   })
 );
 app.use(cookieParser());
-app.get("/myprofile", controllers.myprofile);
 app.post("/signup", controllers.signup);
 app.post("/login", controllers.login);
+app.get("/myprofile", controllers.myprofile);
 app.get("/logout", controllers.logout);
 
 const HTTPS_PORT = process.env.HTTPS_PORT || 4000;
@@ -47,14 +46,21 @@ const HTTPS_PORT = process.env.HTTPS_PORT || 4000;
 // 만약 인증서 파일이 존재하지 않는경우, http 프로토콜을 사용하는 서버를 실행합니다.
 // 파일 존재여부를 확인하는 폴더는 서버 폴더의 package.json이 위치한 곳입니다.
 let server;
-if (fs.existsSync("./key.pem") && fs.existsSync("./cert.pem")) {
-  const privateKey = fs.readFileSync(__dirname + "/key.pem", "utf8");
-  const certificate = fs.readFileSync(__dirname + "/cert.pem", "utf8");
-  const credentials = { key: privateKey, cert: certificate };
+// if (fs.existsSync("./key.pem") && fs.existsSync("./cert.pem")) {
+//   const privateKey = fs.readFileSync(__dirname + "/key.pem", "utf8");
+//   const certificate = fs.readFileSync(__dirname + "/cert.pem", "utf8");
+//   const credentials = { key: privateKey, cert: certificate };
 
-  server = https.createServer(credentials, app);
-  server.listen(HTTPS_PORT, () => console.log("https server runnning"));
-} else {
-  server = app.listen(HTTPS_PORT, () => console.log("http server runnning"));
-}
+//   server = https.createServer(credentials, app);
+//   server.listen(HTTPS_PORT, () => console.log("https server runnning"));
+// } else {
+//   server = app.listen(HTTPS_PORT, () =>
+//     console.log(`port:${HTTPS_PORT}, http server runnning`)
+//   );
+// }
+
+server = app.listen(HTTPS_PORT, () =>
+  console.log(`port:${HTTPS_PORT}, http server runnning`)
+);
+
 module.exports = server;
