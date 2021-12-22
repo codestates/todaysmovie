@@ -11,6 +11,7 @@ import Mainpage from "./pages/Mainpage";
 import axios from "axios";
 
 
+
 export default function App () {
   // const [hasMovie, setHasMovie] = useState(false);
   /*
@@ -49,6 +50,7 @@ export default function App () {
     isAuthenticated();
   },[]);
   */
+ 
     return (
       <BrowserRouter>
         <div>
@@ -60,7 +62,6 @@ export default function App () {
           <nav>
 
 
-          <div className="body">
             {/* <li>
             <Link to="/">LOGIN</Link>
             </li>
@@ -82,7 +83,6 @@ export default function App () {
             <Route path="/mainpage" element={<Mainpage />} />
           </Routes>
           
-          </div>
           </nav>
         </div>
       </BrowserRouter>

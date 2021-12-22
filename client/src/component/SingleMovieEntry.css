@@ -42,10 +42,11 @@ body {
   }
 
   .movieName {
-    white-space: nowrap;
+    white-space: wrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    margin-top: 18px;
   }
 
 .infoColumn {
@@ -56,4 +57,17 @@ body {
 
 .movieDesc {
   text-align: justify;
+}
+
+.tag {
+  display: inline-block;
+  box-shadow: grey 2px 2px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  margin: 10px;
+  padding: 1px;
+}
+.tag-list {
+  margin: 10px;
+  padding: 5px;
 }

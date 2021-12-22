@@ -3,14 +3,13 @@ import './RandomBtn.css';
 import Modal from "../component/Modal";
 
 
-export default function RandomBtn () {
+export default function RandomBtn ({ openModal }) {
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
-<div>
+<div onClick={openModal}>
 <a href="#" className="float">
-<i class="fas fa-random fa-2x"></i>
+<i className="fas fa-random fa-2x"></i>
 </a>
 <div className="label-container">
 <div className="label-text">RANDOME MOVIE</div>

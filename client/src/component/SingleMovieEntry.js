@@ -5,8 +5,8 @@ export default function SingleMovieEntry ({ movie }) {
 
 const {movieName, moviePoster, movieRating, movieRunningtime, movieDesc, movieGenre} = movie;
 
-  return (
-    <div className="card">
+return (
+  <div className="card">
       <div className="card-item">
       <img src={moviePoster} />
       </div>
@@ -16,13 +16,12 @@ const {movieName, moviePoster, movieRating, movieRunningtime, movieDesc, movieGe
         <p className="movieRating">Rating: {movieRating}</p>
         <p className="movieRunningtime">Running time: {movieRunningtime}</p>
         </span>
-        <p className="movieDesc">{movieDesc}</p>
-        <p>genres</p>
         <div className="tag-list">
           {movieGenre.map((genre) => {
-            <div className="tag" key={genre}>{genre}</div>
-        })}</div>
+            return <div className="tag" key={genre}>{genre}</div>
+          })}</div>
       </div>
+        <p className="movieDesc">{movieDesc}</p>
     </div>
 
 
