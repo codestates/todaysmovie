@@ -7,8 +7,8 @@ export default function Myprofile () {
 
   const navigate = useNavigate();
 
-  function handleClicktoMainpage() {
-    navigate("/mainpage");
+  function handleClicktoLogin() {
+    navigate("/");
   }
 
   return (
@@ -20,7 +20,7 @@ export default function Myprofile () {
       <span className="myprofileinfo" id="username">김혜영</span>
       <label className="mobile">MOBILE</label>
       <span className="myprofileinfo" id="mobile">010-1234-5678</span>
-      <button onClick={handleClicktoMainpage}>LOGOUT</button>
+      <button onClick={handleClicktoLogin}>LOGOUT</button>
     </form>
   )
 }

@@ -6,6 +6,12 @@ import mockMovie from "../static/mockMovie";
 import SingleMovie from "../component/SingleMovie";
 import RandomBtn from "../component/RandomBtn";
 
+import ReactModal from 'react-modal';
+ReactModal.setAppElement('#root');
+import Modal from '../component/Modal';
+
+
+
 export default function Mainpage () {
   // const [content, setContent] = useState(mockMovie);
 
@@ -23,17 +29,25 @@ export default function Mainpage () {
   //   fetchTrending();
   // }, []);
 
+  const [isOpen, setOpen] = useState(false);
+
+  const openModal = () => {
+    setOpen(true);
+  };
+
+  const closeModal = () => {
+    setOpen(false);
+  };
+
   return (
     <>
     <span className="body">
       <SingleMovie movies={mockMovie}/>
     </span>
     <div>
-      <RandomBtn />
+    <RandomBtn openModal={openModal}></RandomBtn>
+    <Modal isOpen={isOpen} onRequestClose={closeModal} />
     </div>
-
-
-
     </>
   )
 }
