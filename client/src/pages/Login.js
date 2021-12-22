@@ -5,7 +5,7 @@ import "./Login.css";
 
 axios.defaults.withCredentials = true;
 
-export default function Login ({handleResponseSuccess}) {
+export default function Login ({handleResPonseSuccess}) {
   
   const [loginInfo, setLoginInfo] = useState({
     email: '',
@@ -24,8 +24,9 @@ export default function Login ({handleResponseSuccess}) {
         email: loginInfo.email,
         password: loginInfo.password,
       })
-      .then(()=> {
-        navigate("/mainpage")
+      .then(navigate('/mainpage'))
+      .catch(() => {
+        alert('이메일과 비밀번호를 확인하세요')
       })
     }
     
