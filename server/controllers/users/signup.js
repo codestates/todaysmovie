@@ -3,7 +3,7 @@ const { user } = require("../../models");
 module.exports = (req, res) => {
   const { email, password, username, mobile } = req.body;
   if (!email || !password || !username || !mobile) {
-    res.status(422).json({ message: "insufficient parameters supplied" });
+    res.status(422).json({ message: "Insufficient parameters supplied" });
   }
   user
     .findOrCreate({
@@ -16,13 +16,10 @@ module.exports = (req, res) => {
     })
     .then(([data, created]) => {
       if (!created) {
-        res.status(409).json({ message: "email exists" });
+        res.status(409).json({ message: "Email exists" });
       } else {
-        // req.session.save(function () {
-        //   req.session.userId = data.dataValues.userId;
-        // });
         console.log(data.dataValues);
-        res.status(201).json({ message: "signup is success!" });
+        res.status(201).json({ message: "Signup Success!" });
       }
     });
 };
