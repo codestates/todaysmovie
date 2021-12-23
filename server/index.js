@@ -38,7 +38,7 @@ app.post("/login", controllers.login);
 app.get("/myprofile", controllers.myprofile);
 app.get("/logout", controllers.logout);
 
-const HTTPS_PORT = process.env.HTTPS_PORT || 4000;
+const HTTPS_PORT = process.env.HTTPS_PORT || 80;
 
 let server = app.listen(HTTPS_PORT, () =>
   console.log(`port:${HTTPS_PORT}, http server runnning`)
