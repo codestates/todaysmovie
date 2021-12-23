@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
-import "./Mainpage.css";
-
 import mockMovie from "../static/mockMovie";
-
 import SingleMovie from "../component/SingleMovie";
 import RandomBtn from "../component/RandomBtn";
 
 import ReactModal from 'react-modal';
 ReactModal.setAppElement('#root');
 import Modal from '../component/Modal';
-
-
 
 export default function Mainpage () {
   // const [content, setContent] = useState(mockMovie);

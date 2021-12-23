@@ -23,7 +23,5 @@ return (
       </div>
         <p className="movieDesc">{movieDesc}</p>
     </div>
-
-
   )
 }
