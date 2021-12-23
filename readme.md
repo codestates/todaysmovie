@@ -16,15 +16,12 @@
 # 우리는 이런 기술을 사용했어요.
 
 * Frontend<p>
-![140px-Unofficial_JavaScript_logo_2 svg](https://user-images.githubusercontent.com/85774603/146703183-22735cf9-5c9c-4012-9b61-79fd27a5ce72.png)<br>
-![200px-React-icon svg](https://user-images.githubusercontent.com/85774603/146703185-9161b87c-4dcf-4fdb-8efb-0f59d5de8e5f.png)<br>
-![react_hooks](https://user-images.githubusercontent.com/85774603/146703188-6ccf6c44-7588-4720-b6ae-a7c487b3c058.png)
+![front end](https://user-images.githubusercontent.com/85816029/147192503-64084975-d0ca-4f39-b618-316379e1e750.jpg)
+
 
 * Backend<p>
-![0020_999_1596447608_Node](https://user-images.githubusercontent.com/85774603/146703220-32e9ee68-ba22-44ce-a495-805be66d3340.png)<br>
-![Expressjs](https://user-images.githubusercontent.com/85774603/146703225-f14866f4-d430-44de-9ebc-f4507298fb55.png)<br>
-![mysql](https://user-images.githubusercontent.com/85774603/146703228-13d6d696-4b07-4040-ac31-e4ab191ff96e.png)<br>
-![sequelize](https://user-images.githubusercontent.com/85774603/146703230-ab811d07-c2b0-4a7b-9517-ad950c3c9b74.png)
+![backend](https://user-images.githubusercontent.com/85816029/147192501-06e68c05-be26-45a9-832e-db13f32bdcbc.jpg)
+
 
 # 홈페이지는 대략 이렇게 생겼어요
 
