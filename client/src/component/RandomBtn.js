@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import './RandomBtn.css';
-import Modal from "../component/Modal";
-
 
 export default function RandomBtn ({ openModal }) {
-
-
+  
   return (
 <div onClick={openModal}>
 <a href="#" className="float">

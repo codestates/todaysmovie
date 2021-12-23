@@ -2,7 +2,6 @@ import React from "react";
 import "./Myprofile.css";
 import { useNavigate } from "react-router-dom";
 
-
 export default function Myprofile () {
 
   const navigate = useNavigate();

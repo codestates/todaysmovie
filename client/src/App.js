@@ -2,15 +2,12 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Link, useNavigate } from "react-router-dom";
 import "./App.css";
 import Header from "./Header";
-import Search from "./Search";
 import ProfileBtn from "./ProfileBtn.js";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Myprofile from "./pages/Myprofile";
 import Mainpage from "./pages/Mainpage";
 import axios from "axios";
-
-
 
 export default function App () {
   
@@ -53,7 +50,6 @@ export default function App () {
         <div>
           <div className="header">
             <Header />
-            <Search />
             <ProfileBtn />
           </div>
           <nav>

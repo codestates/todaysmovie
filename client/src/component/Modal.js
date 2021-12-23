@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactModal from "react-modal";
-import styled from 'styled-components'
 import "./Modal.css";
 import mockMovie from "../static/mockMovie";
 

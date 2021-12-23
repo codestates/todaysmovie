@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import "./Login.css";
 
@@ -29,7 +29,6 @@ export default function Login ({handleResPonseSuccess}) {
         alert('이메일과 비밀번호를 확인하세요')
       })
     }
-    
   }
 
   function handleClicktoSignuppage() {
@@ -39,7 +38,7 @@ export default function Login ({handleResPonseSuccess}) {
   return (
     <form>
       <h3>LOGIN</h3>
-      <label className="username">USERNAME</label>
+      <label className="username">EMAIL</label>
       <input type="text" placeholder="Email" id="username" onChange={handleInputValue('email')}/>
       <label className="password">PASSWORD</label>
       <input type="password" placeholder="Password" id="password" onChange={handleInputValue('password')}/>
