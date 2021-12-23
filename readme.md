@@ -3,7 +3,8 @@
 
 # Todaysmovie
 
-<사진이나 로고 추가>
+![logo](https://user-images.githubusercontent.com/85816029/147209386-c3161137-78a3-4852-bde7-17d197eb3f55.png)
+
 
 세상에 존재하는 수많은 영화들 중 고르고 골라 만든 나만의 watch list.
 
